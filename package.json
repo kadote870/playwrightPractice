@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "npx": "npx playwright test tests/example.spec.ts --debug"
+    "npx": "npx playwright test tests/example.spec.ts --debug",    
+    "codegen": "npx playwright codegen --ignore-https-errors",
+    "allegro": "npx playwright test tests/allegro.spec.ts --debug"
   },
   "keywords": [],
   "author": "",
