@@ -11,9 +11,7 @@ test('allegro', async ({ page }) => {
 	await page.click('button[data-role="search-button"]');
 
 	await page.waitForSelector('[data-box-name="Listing title"] h1');
-	await expect(page.locator('[data-box-name="Listing title"] h1')).toHaveText(
-		searchPhrase
-	);
+	await expect(page.locator('[data-box-name="Listing title"] h1')).toHaveText(searchPhrase);
 });
 
 test('steam', async ({ page }) => {
